@@ -48,7 +48,7 @@ namespace RNC.Tools
             xmlDoc.Save(fileLocation);
         }
 
-        //This function read smtpSetting and returns values: Possibility to use serialization.
+        //This function reads smtpSetting and returns values: Possibility to use serialization.
         public Dictionary<string, string> readSmtpSettings()
         {
             XmlNode rootNode = getSmtpSettingsXMLRoot();
