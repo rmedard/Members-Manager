@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SmtpEmailing>
+  <Host name="smtp.gmail.com" EnableSSL="true" UseDefaultCredentials="false" Port="587">
+    <SenderName>Rebero Medard Sutter</SenderName>
+    <Email>rmedard5@gmail.com</Email>
+    <Password>00Derfine</Password>
+  </Host>
+</SmtpEmailing>
