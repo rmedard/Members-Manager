@@ -42,7 +42,6 @@ namespace RNC.Implementors
                     using (SqlCeCommand command = new SqlCeCommand(query, con))
                     {
                         int affectedRows = command.ExecuteNonQuery();
-                        con.Close(); //This is not needed...When "Using" is used, the resources are disposed automatically. 
                         return affectedRows == 1 ? true : false;
                     }
                 }
@@ -102,7 +101,6 @@ namespace RNC.Implementors
                         }
                     }
                 }
-                con.Close();
             }
             return attendances;
         }
@@ -124,7 +122,6 @@ namespace RNC.Implementors
                         //command.ExecuteNonQuery();
                         
                         attendance.Id = Convert.ToInt32(command.ExecuteScalar().ToString());
-                        con.Close();
                         return affectedRows == 1 ? attendance : null;
                     }
                 }
